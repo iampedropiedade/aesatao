@@ -1,0 +1,17 @@
+/docker/mysql
+
+# Ignore concrete5 stuff
+/service/application/config/secrets.php
+/service/application/files
+/service/application/languages
+/service/sitemap.xml
+
+# Ignore UI build files
+/service/application/themes/aesatao/app
+/ui/node_modules
+/theme/node_modules
+
+# Ignore developer stuff
+*.DS_Store
+/.idea
+app.sql

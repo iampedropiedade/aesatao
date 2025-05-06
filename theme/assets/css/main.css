@@ -1,0 +1,17 @@
+@import "theme.css";
+
+.navbar.navbar-light.fixed .btn:not(.btn-expand):not(.btn-gradient) {
+    background: #7eb400 !important;
+    border-color: #7eb400 !important;
+    color: #ffffff !important;
+}
+
+.accordion-wrapper .card-header button {
+    color: #7eb400;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg.navbar-light .dropdown:not(.dropdown-submenu)>.dropdown-toggle:after {
+        color: #7eb400 !important;
+    }
+}

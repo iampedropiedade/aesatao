@@ -1,0 +1,37 @@
+services:
+  web:
+    build:
+      context: '.'
+      args:
+        uid: ${UID}
+    container_name: ${DOCKER_NAME}_app
+    environment:
+      - APACHE_RUN_USER=#${UID}
+      - APACHE_RUN_GROUP=#${UID}
+    volumes:
+      - ./docker/apache2/sites-available:/etc/apache2/sites-available:cached
+      - ./docker/php/php.ini:/usr/local/etc/php/php.ini:cached
+      - ./service:/var/www/html
+    ports:
+      - 8141:80
+    networks:
+      - epadrv
+
+  mysql-db:
+    image: mysql:8.4
+    environment:
+      - MYSQL_ROOT_PASSWORD=zzFVFrQyTK7IJxfpokfiAo4ZdO9kkYp56RqBGyM5iak6YA6sGmVUI0bvyYy3craC
+      - MYSQL_DATABASE=app
+      - MYSQL_USER=app
+      - MYSQL_PASSWORD=sFudRpRlsVJy9ZO8j3KpJkNJPPYJjD2VopvbHxRLXtZcJd1VHn2g0n9gC5l0VBI3
+    ports:
+      - '3375:3306'
+    volumes:
+      - ./docker/mysql:/var/lib/mysql:rw
+    command: ['--mysql-native-password=ON']
+    container_name: ${DOCKER_NAME}_db
+    networks:
+      - epadrv
+
+networks:
+  epadrv:
