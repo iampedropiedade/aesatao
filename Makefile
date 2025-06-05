@@ -81,10 +81,10 @@ deploy:
 	$(MAKE) doctrine
 
 export-db:
-	docker exec -it -u root aesatao_db sh -c "cd /home && mysqldump -u root -pzzFVFrQyTK7IJxfpokfiAo4ZdO9kkYp56RqBGyM5iak6YA6sGmVUI0bvyYy3craC app > app.sql" && docker cp aesatao_db:/home/app.sql .
+	docker exec -it -u root aesatao_db sh -c "cd /home && mysqldump -u root -pxgJUIC2HRP1Ehu1Ljqvclr67DWAnile26fRF8EXl9OBns6H2jAeAW0gRAMONxpYB app > app.sql" && docker cp aesatao_db:/home/app.sql .
 
 import-db:
-	docker cp ./app.sql aesatao_db:/home && docker exec -it aesatao_db sh -c "cd /home && mysql -u root -pzzFVFrQyTK7IJxfpokfiAo4ZdO9kkYp56RqBGyM5iak6YA6sGmVUI0bvyYy3craC app < ./app.sql"
+	docker cp ./app.sql aesatao_db:/home && docker exec -it aesatao_db sh -c "cd /home && mysql -u root -pxgJUIC2HRP1Ehu1Ljqvclr67DWAnile26fRF8EXl9OBns6H2jAeAW0gRAMONxpYB app < ./app.sql"
 
 copy-db-staging-up:
 	cd /Users/pedropiedade/Documents/http/pedro/aesatao && rsync -arv --stats --exclude='cache' app.sql root@104.248.36.69:/home/aesatao
