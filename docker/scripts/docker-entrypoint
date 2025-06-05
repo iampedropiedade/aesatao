@@ -1,0 +1,22 @@
+#!/bin/bash
+set -e
+
+echo "[info] Setting Permissions"
+chown -Rv www-data:www-data /var/www/html/application/config
+chown -Rv www-data:www-data /var/www/html/application/files
+chmod -Rv 0775 /var/www/html/application/files
+mkdir -p /var/www/html/application/languages/site
+chown -Rv www-data:www-data /var/www/html/application/languages
+chmod -Rv 0775 /var/www/html/application/languages
+chmod -Rv 0775 /var/www/html/application/config
+chmod -Rv 0775 /var/www/html/packages
+
+echo "[Info] running refreshing entities"
+su www-data -s /bin/sh -c "./var/www/html/concrete/bin/concrete5 c5:entities:refresh"
+echo "[Info] update refreshing entities complete"
+
+echo "[Info] running proxy generation"
+su www-data -s ./var/www/html/concrete/bin/concrete5 orm:generate-proxies
+echo "[Info] proxy generation complete"
+
+/usr/sbin/apache2 -D FOREGROUND

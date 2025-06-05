@@ -1,0 +1,11 @@
+{
+  "name": "pedropiedade/aesatao",
+  "type": "project",
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "Application\\": "./"
+    }
+  },
+  "require_dev": {}
+}

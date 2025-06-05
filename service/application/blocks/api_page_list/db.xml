@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+xmlns="http://www.concrete5.org/doctrine-xml/0.5"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.concrete5.org/doctrine-xml/0.5 http://concrete5.github.io/doctrine-xml/doctrine-xml-0.5.xsd">
+    <table name="btApiPageList">
+        <field name="bID" type="integer">
+            <unsigned/>
+            <autoincrement/>
+        </field>
+        <field name="title" type="string" size="1024" />
+        <field name="subTitle" type="string" size="1024" />
+        <field name="cardStyle" type="string" size="1024" />
+        <field name="itemsPerPage" type="integer">
+            <unsigned/>
+        </field>
+        <field name="displayPagination" type="string" size="32" />
+        <field name="sort" type="string" size="1024" />
+        <field name="additionalButton" type="string" size="1024" />
+        <field name="additionalButtonCaption" type="string" size="1024" />
+        <field name="additionalButtonPageId" type="integer">
+            <unsigned/>
+        </field>
+        <field name="parentPageId" type="integer">
+            <unsigned/>
+        </field>
+        <field name="ctaCaption" type="string" size="1024" />
+        <field name="ctaLinkToPageId" type="integer">
+            <unsigned/>
+        </field>
+        <field name="filterPageTypes" type="string" size="2048" />
+        <field name="filterTagsIn" type="string" size="2048" />
+        <field name="filterTagsOut" type="string" size="2048" />
+    </table>
+</schema>

@@ -13,25 +13,25 @@ services:
       - ./docker/php/php.ini:/usr/local/etc/php/php.ini:cached
       - ./service:/var/www/html
     ports:
-      - 8141:80
+      - 8142:80
     networks:
-      - epadrv
+      - aesatao
 
   mysql-db:
     image: mysql:8.4
     environment:
-      - MYSQL_ROOT_PASSWORD=zzFVFrQyTK7IJxfpokfiAo4ZdO9kkYp56RqBGyM5iak6YA6sGmVUI0bvyYy3craC
+      - MYSQL_ROOT_PASSWORD=xgJUIC2HRP1Ehu1Ljqvclr67DWAnile26fRF8EXl9OBns6H2jAeAW0gRAMONxpYB
       - MYSQL_DATABASE=app
       - MYSQL_USER=app
-      - MYSQL_PASSWORD=sFudRpRlsVJy9ZO8j3KpJkNJPPYJjD2VopvbHxRLXtZcJd1VHn2g0n9gC5l0VBI3
+      - MYSQL_PASSWORD=I3wM2Q5kJZkSsIvYdmZJcoOJyTd10aRcnWcw8kKHKBPbzyXqN58vdbAmu4ECraQM
     ports:
-      - '3375:3306'
+      - '3376:3306'
     volumes:
       - ./docker/mysql:/var/lib/mysql:rw
     command: ['--mysql-native-password=ON']
     container_name: ${DOCKER_NAME}_db
     networks:
-      - epadrv
+      - aesatao
 
 networks:
-  epadrv:
+  aesatao:

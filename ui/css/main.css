@@ -1,0 +1,106 @@
+@import "theme.css";
+@import "plugins/fonts/thicccboi.css";
+
+.navbar.navbar-light.fixed .btn:not(.btn-expand):not(.btn-gradient) {
+    background: #7eb400 !important;
+    border-color: #7eb400 !important;
+    color: #ffffff !important;
+}
+
+.accordion-wrapper .card-header button {
+    color: #7eb400;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg.navbar-light .dropdown:not(.dropdown-submenu)>.dropdown-toggle:after {
+        color: #7eb400 !important;
+    }
+}
+
+
+.ccm-edit-mode-block-menu .dropdown-menu .dropdown-item {
+    font-size: 14px!important;
+}
+
+.navbar-unstick {
+    top: 0
+}
+
+.body-toolbar-mode {
+    .navbar.navbar-clone.fixed, .navbar-stick, .offcanvas {
+        top: 48px;
+    }
+}
+
+#ccm-page-controls-wrapper {
+    z-index: 99999;
+}
+
+.fc-header-toolbar.fc-toolbar {
+    display: none;
+}
+.fc .fc-multimonth {
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #fafafa;
+}
+
+.fc-multimonth-header-table {
+    border-collapse: separate;
+    border: solid black 1px;
+    border-radius: 6px;
+    th {
+        background-color: #467498;
+        color: #ffffff;
+        border-top: none;
+        a {
+            color: #ffffff;
+            text-decoration-line: none;
+        }
+    }
+    td:first-child, th:first-child {
+        border-left: none;
+    }
+}
+
+
+
+.wysiwyg {
+    ul {
+        margin-left: 1rem;
+        li {
+            list-style-type: disc;
+        }
+    }
+}
+
+.dropdown-toggle {
+    &::after {
+        display: none !important;
+    }
+}
+
+.swiper-controls {
+    .swiper-navigation {
+        .swiper-button:after {
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+        }
+        .swiper-button.swiper-button-prev {
+            &::after {
+                content: var(--tw-content);
+                --tw-content: "\f053"
+            }
+        }
+        .swiper-button.swiper-button-next {
+            &::after {
+                --tw-content: "\f054";
+                content: var(--tw-content);
+            }
+        }
+    }
+}
+
+h4 {
+    text-transform: uppercase;
+}

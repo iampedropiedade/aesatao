@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.concrete5.org/doctrine-xml/0.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.concrete5.org/doctrine-xml/0.5 https://concretecms.github.io/doctrine-xml/doctrine-xml-0.5.xsd">
+  <table name="btCustomBanner">
+    <field name="bID" type="integer">
+      <unsigned/>
+      <key/>
+    </field>
+    <field name="title" type="string" size="255" />
+    <field name="description" type="text" />
+    <field name="imageId" type="integer">
+      <unsigned/>
+    </field>
+
+    <field name="buttonPageId" type="integer">
+      <unsigned/>
+    </field>
+    <field name="buttonLinkToSection" type="string" size="255" />
+    <field name="buttonCaption" type="string" size="255" />
+
+    <field name="button2PageId" type="integer">
+      <unsigned/>
+    </field>
+    <field name="button2LinkToSection" type="string" size="255" />
+    <field name="button2Caption" type="string" size="255" />
+
+    <field name="statIcon" type="string" size="255" />
+    <field name="statTitle" type="string" size="255" />
+    <field name="statDescription" type="string" size="255" />
+
+  </table>
+</schema>

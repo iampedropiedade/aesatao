@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+    <table name="Rawnet301Redirects">
+        <field name="ID" type="I">
+            <key />
+            <unsigned />
+            <autoincrement />
+        </field>
+        <field name="redirect_from" type="C" size="510">
+            <default value="" />
+        </field>
+        <field name="redirect_to" type="C" size="255">
+            <default value="" />
+        </field>
+        <field name="redirect_type" type="C" size="255">
+            <default value="page" />
+        </field>
+        <field name="isWildchar" type="C" size="1">
+            <default value="N" />
+        </field>
+        <field name="isRegexp" type="C" size="1">
+            <default value="N" />
+        </field>
+        <field name="site_id" type="I">
+            <default value="1" />
+        </field>
+        <index name="redirectFrom">
+            <descr>Put a unique index on the redirect from field</descr>
+            <col>redirect_from</col>
+            <unique />
+        </index>
+    </table>
+</schema>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+xmlns="http://www.concrete5.org/doctrine-xml/0.5"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.concrete5.org/doctrine-xml/0.5 http://concrete5.github.io/doctrine-xml/doctrine-xml-0.5.xsd">
+    <table name="btGoogleDriveFolder">
+        <field name="bID" type="integer">
+            <unsigned/>
+            <autoincrement/>
+        </field>
+        <field name="title" type="string" size="512" />
+        <field name="intro" type="text" />
+        <field name="parentFolderId" type="string" size="256" />
+        <field name="defaultItemStyle" type="string" size="64" />
+        <field name="displayPermissions" type="string" size="64" />
+        <field name="displayItemTypes" type="string" size="64" />
+        <field name="openFoldersMethod" type="string" size="64" />
+        <field name="itemsPerPage" type="integer">
+            <unsigned/>
+        </field>
+        <field name="displayPagination" type="string" size="32" />
+        <field name="orderBy" type="string" size="32" />
+    </table>
+</schema>

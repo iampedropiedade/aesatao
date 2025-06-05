@@ -27,7 +27,7 @@ bash-db:
 	docker exec -it aesatao_db bash
 
 open:
-	open http://localhost:8141/
+	open http://localhost:8142/
 
 configure-nginx:
 	cp /home/aeaav/nginx/default /etc/nginx/sites-available/default && sudo systemctl reload nginx

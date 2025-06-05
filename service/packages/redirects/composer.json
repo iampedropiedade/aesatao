@@ -1,0 +1,17 @@
+{
+  "name": "rawnet/concrete-redirects",
+  "extra": {
+    "installer-name": "redirects"
+  },
+  "type": "concrete5-package",
+  "license": "MIT",
+  "require": {
+    "composer/installers": "^2.2.0"
+  },
+  "authors": [
+    {
+      "name": "Rawnet Development",
+      "email": "development@rawnet.com"
+    }
+  ]
+}
