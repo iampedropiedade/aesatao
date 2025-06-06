@@ -101,6 +101,18 @@ $logoLight = $navbarStyle === 'navbar-light' ? 'logo-aesatao-dark.png' : 'logo-a
                         </span>
                         <ul class="dropdown-menu dropdown-menu-right !mt-4 !absolute !ml-[-100%]">
                             <li class="nav-item mb-1 b">
+                                <a class="dropdown-item hover:!text-aesatao-600 !font-medium" href="https://programas.escolasdesatao.pt/inovaralunos/Inicial.wgx" target="_blank">
+                                    Inovar Alunos
+                                    <sup><i class="fa-solid fa-arrow-up-right-from-square text-[0.45rem] ml-1"></i></sup>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-1 b">
+                                <a class="dropdown-item hover:!text-aesatao-600 !font-medium" href="https://programas.escolasdesatao.pt/inovarprofissional/Inicial.wgx" target="_blank">
+                                    Inovar Profissional
+                                    <sup><i class="fa-solid fa-arrow-up-right-from-square text-[0.45rem] ml-1"></i></sup>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-1 b">
                                 <a class="dropdown-item hover:!text-aesatao-600 !font-medium" href="https://programas.escolasdesatao.pt/inovarsase/Inicial.wgx" target="_blank">
                                     Inovar SASE
                                     <sup><i class="fa-solid fa-arrow-up-right-from-square text-[0.45rem] ml-1"></i></sup>
