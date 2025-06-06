@@ -42,7 +42,7 @@
                   <div class="flex-grow-1">
                     <h4 class="!mb-1 break-words whitespace-normal overflow-hidden text-wrap group-hover:underline" v-html="highlight(entry.title)"></h4>
                     <div class="!mb-1 break-words whitespace-normal overflow-hidden text-wrap group-hover:underline" v-html="highlight(entry.description)"></div>
-                    <div class="!mb-0 !text-gray-500 text-[0.7rem]">Modificado {{ $dayjs(entry.dateModified).fromNow() }}</div>
+                    <div class="!mb-0 !text-gray-500 text-[0.7rem]">Modificado {{ $dayjs(entry.dateModified.date).fromNow() }}</div>
                   </div>
                 </div>
               </a>

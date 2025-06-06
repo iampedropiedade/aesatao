@@ -107,6 +107,12 @@ $logoLight = $navbarStyle === 'navbar-light' ? 'logo-aesatao-dark.png' : 'logo-a
                                 </a>
                             </li>
                             <li class="nav-item mb-1 b">
+                                <a class="dropdown-item hover:!text-aesatao-600 !font-medium" href="https://programas.escolasdesatao.pt/inovarconsulta/app/index.html#/login" target="_blank">
+                                    Inovar Consulta
+                                    <sup><i class="fa-solid fa-arrow-up-right-from-square text-[0.45rem] ml-1"></i></sup>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-1 b">
                                 <a class="dropdown-item hover:!text-aesatao-600 !font-medium" href="https://programas.escolasdesatao.pt/PortalUnicard" target="_blank">
                                     Portal SIGE
                                     <sup><i class="fa-solid fa-arrow-up-right-from-square text-[0.45rem] ml-1"></i></sup>
@@ -148,7 +154,7 @@ $logoLight = $navbarStyle === 'navbar-light' ? 'logo-aesatao-dark.png' : 'logo-a
                        class="form-control text-[0.8rem] !shadow-none pl-[1.75rem] !pr-[.75rem] border-0 bg-inherit m-0 block w-full font-medium leading-[1.7] text-[#60697b] px-4 py-[0.6rem] rounded-[0.4rem] focus:!outline-offset-0 focus:outline-0"
                        placeholder="Digite os termos de pesquisa e pressione a tecla Enter" />
             </form>
-            <button type="button" class="btn-close leading-none text-[#343f52] transition-all duration-[0.2s] ease-in-out p-0 border-0 motion-reduce:transition-none hover:no-underline bg-inherit focus:outline-0" data-bs-dismiss="offcanvas" aria-label="Close">
+            <button type="button" class="leading-none text-[#343f52] transition-all duration-[0.2s] ease-in-out p-0 border-0 motion-reduce:transition-none hover:no-underline bg-inherit focus:outline-0" data-bs-dismiss="offcanvas" aria-label="Close">
                 <i class="fa-solid fa-xmark !text-[1.1rem] pl-4"></i>
             </button>
         </div>
